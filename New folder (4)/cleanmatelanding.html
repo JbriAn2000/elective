@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-[#f8fcfa] justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-[#f8fcfa] p-4 pb-2 justify-between">
+          <h2 class="text-[#0d1b14] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">CleanMate</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#0d1b14] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#0d1b14]" data-icon="List" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="@container">
+          <div class="@[480px]:p-4">
+            <div
+              class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfQUAEm8-3Upn5MH-o_ZvZkfkqxE_fQJPcprBvT4uExeKZnBCKXAnfyeNEtXk37dKVAPHbLK1Y-oQ8ucKP_nIcWj2mp2nJCZz_e5Y86NcC128pcGo0zFRJGe8QKBP9sxD2HHa3ONSkIXUjgZeIoYJNGuvtfHV_QnWT9UgCUXuPfXsrCmLEzgZzY0d9oJXZXgj6gav_URxNRMF5sHZIo1O2qQT1M1j0eu0Pz3WV0eJNxFg-BLvW2JTouNp5aZ_yfXd-ukrbIHIU7Oc");'
+            >
+              <div class="flex flex-col gap-2 text-center">
+                <h1
+                  class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                >
+                  Keep Our Environment Clean
+                </h1>
+                <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                  Report and view trash to help maintain a healthy environment.
+                </h2>
+              </div>
+              <div class="flex-wrap gap-3 flex justify-center">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#13ec80] text-[#0d1b14] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                >
+                  <span class="truncate"; onclick="window.location.href='reporttrashpage.html'">Report Trash</span>
+                  
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e7f3ed] text-[#0d1b14] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                >
+                  <span class="truncate"; onclick="window.location.href='viewreportpage.html'">View Reports</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-[#0d1b14] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quick Overview</h2>
+        <p class="text-[#0d1b14] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          CleanMate is a platform designed to facilitate the reporting and viewing of trash in our environment. By using CleanMate, you can contribute to keeping our surroundings
+          clean and healthy. Whether you want to report a new instance of trash or view existing reports, CleanMate provides the tools you need.
+        </p>
+        <h2 class="text-[#0d1b14] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Mission</h2>
+        <p class="text-[#0d1b14] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Our mission is to empower individuals to take action in maintaining a clean environment. We believe that by providing a user-friendly platform for reporting and viewing
+          trash, we can collectively make a significant impact on the health of our planet. Join us in our mission to create a cleaner, healthier world for everyone.
+        </p>
+      </div>
+      <div>
+        <div class="flex px-4 py-3 justify-center">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3ed] text-[#0d1b14] text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate"; onclick="window.location.href='aboutus.html'">About</span>
+          </button>
+        </div>
+        <div class="flex px-4 py-3 justify-center">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3ed] text-[#0d1b14] text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate";  onclick="window.location.href='tipspage.html'">Tips</span>
+          </button>
+        </div>
+        <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+          <p class="text-[#4c9a73] text-base font-normal leading-normal">© 2025 CleanMate. All rights reserved.</p>
+        </footer>
+        <div class="h-5 bg-[#f8fcfa]"></div>
+      </div>
+    </div>
+  </body>
+</html>
