@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-[#f8fcf8] group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7f3e7] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d1b0d]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#0d1b0d] text-lg font-bold leading-tight tracking-[-0.015em]">Clean Community</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d1b0d] text-sm font-medium leading-normal" href="home.html">Home</a>
+              <a class="text-[#0d1b0d] text-sm font-medium leading-normal" href="aboutus.html">About</a>
+              <a class="text-[#0d1b0d] text-sm font-medium leading-normal" href="reporttrashpage.html">Report Trash</a>
+              <a class="text-[#0d1b0d] text-sm font-medium leading-normal" href="viewreportpage.html">View Reports</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxE-6Uj7Pc0hdMVdlxQtYdHt1mgx4VrKQOjhNq_LmcEPsR9ok-tGljkt6xOo5J1z0vdLCBuayY2y_bQFuFW7_4W6wlcosVukVYJa1Qr-hiSOPiX1IwLGPZIj-fn1Y9l_cNkvTCKoiY3fdo6_1MuNQnYjOdyfiuputM1BHqgPqWCIjGvXbo3ex1Dk3gDnX89__uOPf7xFrGr8ZxTMx9xfKjkHUMk0SE4d3-FXY29RsJ0nituPZ3H5FrzB-C6JJ_IfrkkLHmdRwbhM4");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0d1b0d] tracking-light text-[32px] font-bold leading-tight">Report Trash</p>
+                <p class="text-[#4c9a4c] text-sm font-normal leading-normal">Help us keep our community clean by reporting areas that need attention.</p>
+              </div>
+            </div>
+            <h3 class="text-[#0d1b0d] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Upload Image</h3>
+            <div class="flex flex-col p-4">
+              <div class="flex flex-col items-center gap-6 rounded-lg border-2 border-dashed border-[#cfe7cf] px-6 py-14">
+                <div class="flex max-w-[480px] flex-col items-center gap-2">
+                  <p class="text-[#0d1b0d] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Click to upload an image</p>
+                  <p class="text-[#0d1b0d] text-sm font-normal leading-normal max-w-[480px] text-center">Images help us understand the situation better.</p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3e7] text-[#0d1b0d] text-sm font-bold leading-normal tracking-[0.015em]"
+                     onclick="document.getElementById('fileInput').click();" 
+                >
+                  <span class="truncate">Upload Image</span>
+                    <input type="file" id="fileInput" style="display: none;" />
+
+                  <p id="fileName"></p>
+
+                        <script>
+                          const fileInput = document.getElementById('fileInput');
+                          const fileNameDisplay = document.getElementById('fileName');
+
+                            fileInput.addEventListener('change', () => {
+                               if (fileInput.files.length > 0) {
+                            fileNameDisplay.textContent = `Selected file: ${fileInput.files[0].name}`;
+                             } else {
+                            fileNameDisplay.textContent = 'No file selected';
+                       }
+                    });
+                    </script>
+                </button>
+              </div>
+            </div>
+            <h3 class="text-[#0d1b0d] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Location</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <input
+                  placeholder="Enter location or use GPS"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d1b0d] focus:outline-0 focus:ring-0 border border-[#cfe7cf] bg-[#f8fcf8] focus:border-[#cfe7cf] h-14 placeholder:text-[#4c9a4c] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3e7] text-[#0d1b0d] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Use GPS</span>
+              </button>
+            </div>
+            <h3 class="text-[#0d1b0d] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Description</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <textarea
+                  placeholder="Describe the issue in detail"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d1b0d] focus:outline-0 focus:ring-0 border border-[#cfe7cf] bg-[#f8fcf8] focus:border-[#cfe7cf] min-h-36 placeholder:text-[#4c9a4c] p-[15px] text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-[#13ec13] text-[#0d1b0d] text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate"; onclick="location.href='viewreportpage.html'">Submit Report</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
