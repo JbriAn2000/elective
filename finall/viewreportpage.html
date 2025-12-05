@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f4f0] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#111811]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#111811] text-lg font-bold leading-tight tracking-[-0.015em]">Clean Community</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-[#111811] text-sm font-medium leading-normal" href="home.html">Home</a>
+              <a class="text-[#111811] text-sm font-medium leading-normal" href="reporttrashpage.html">Report</a>
+              <a class="text-[#111811] text-sm font-medium leading-normal" href="viewreportpage.html">View Report</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#618961] flex border-none bg-[#f0f4f0] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111811] focus:outline-0 focus:ring-0 border-none bg-[#f0f4f0] focus:border-none h-full placeholder:text-[#618961] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#13ec13] text-[#111811] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate"; onclick="location.href='reporttrashpage.html'">New Report</span>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxE-6Uj7Pc0hdMVdlxQtYdHt1mgx4VrKQOjhNq_LmcEPsR9ok-tGljkt6xOo5J1z0vdLCBuayY2y_bQFuFW7_4W6wlcosVukVYJa1Qr-hiSOPiX1IwLGPZIj-fn1Y9l_cNkvTCKoiY3fdo6_1MuNQnYjOdyfiuputM1BHqgPqWCIjGvXbo3ex1Dk3gDnX89__uOPf7xFrGr8ZxTMx9xfKjkHUMk0SE4d3-FXY29RsJ0nituPZ3H5FrzB-C6JJ_IfrkkLHmdRwbhM4");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#111811] tracking-light text-[32px] font-bold leading-tight">Trash Reports</p>
+                <p class="text-[#618961] text-sm font-normal leading-normal">View and manage all submitted reports of dirty places in our community.</p>
+              </div>
+            </div>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f4f0] pl-4 pr-2">
+                <p class="text-[#111811] text-sm font-medium leading-normal">Status</p>
+                <div class="text-[#111811]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f4f0] pl-4 pr-2">
+                <p class="text-[#111811] text-sm font-medium leading-normal">Location</p>
+                <div class="text-[#111811]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f4f0] pl-4 pr-2">
+                <p class="text-[#111811] text-sm font-medium leading-normal">Date</p>
+                <div class="text-[#111811]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#dbe6db] bg-white">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56 px-4 py-3 text-left text-[#111811] w-14 text-sm font-medium leading-normal">Image</th>
+                      <th class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                        Location
+                      </th>
+                      <th class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                        Description
+                      </th>
+                      <th class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416 px-4 py-3 text-left text-[#111811] w-60 text-sm font-medium leading-normal">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#dbe6db]">
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
+                        <div
+                          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
+                          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5fHB4ggWiTy-6Ll74MJZXLQxLCaS9J3hFczTHAyRa3CaFU_EDgfqaXrIcv1K9rp9C3cWpFlZW6YH3TVJc1DJJqN8SAso4tpybFhoRQIilSokOKP72Xfv11cMX-Io9y2eXhScoDWjFiukuVj5DMmjZwnsoR4VF_Ia41Q65Bkz40oW-NGl32lS3RM1ImHvch3TK8QiPSjiqsLaXLBCjb4Cqii4A6FGlVSZCt_07ydjjThn1CJY6GNnl0jHaNTd3xmG7buAHnYRXjVI");'
+                        ></div>
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
+                        Alae Manolo Fortich Bukidon
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296 h-[72px] px-4 py-2 w-[400px] text-[#618961] text-sm font-normal leading-normal">
+                        Large amount of trash near the MPC hardware.
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Pending</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe6db]">
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
+                        <div
+                          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
+                          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgSEssm8IbYTBo4M24QFYEIYQspsw4NWfEjg-XLbyG188JMLoLc64Uy8bFjeJKA5QKp9seom9J1z1Ptp2_xmqOllEryhC27JyueOfaIy75V0Cq2ndn2zaEEJyUgn3R-9920F8v3dNh__CB-E61lLa81SIwAH2_KGpAUAlnQc8a9cBpP-RwoedSBCwjlWtRg7jK1Fyef9O7FdU3oe3PH3WXbXI4pfSzyograR5wtYtXvrOpEiuC5qadEfE8REKrtpCTrzWBTBlt4uM");'
+                        ></div>
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
+                        Agusan Canyon Kisabong
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296 h-[72px] px-4 py-2 w-[400px] text-[#618961] text-sm font-normal leading-normal">
+                        Illegal dumping of Mikko hugawan.
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">In Progress</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe6db]">
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
+                        <div
+                          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
+                          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaqGH470YNE4POb_fuozmbO7QKbbZjMhpenbRoaE0AhB3L8sWP--bO7EZzW4OCoR1WTOiS8feBwT7_dV3Fhp4sHD9KOUN1m8oyqVwYNr8-N1j_YFgTAVvb6-Z3SvEsZQ5GtacUi63UvR91LcyajsnS1KflAZc_Hkx_I1jG7ZHa86iSlTJKWoeKa76FnUB3h9REvtlr-6xvnwjzUIxTpFD0_Cw5_yPLu20ZXm56kYrhyBayHsCe4Ob4mUpIfK4PKqSkZ2jUOZ9fhm8");'
+                        ></div>
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
+                        Main Street
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296 h-[72px] px-4 py-2 w-[400px] text-[#618961] text-sm font-normal leading-normal">
+                        Scattered litter along the sidewalk.
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Resolved</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe6db]">
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
+                        <div
+                          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
+                          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2ZMX6tiLtGBWY9bRRj4tT3w_49lSnNnCgUNgEV3y1Y9m6c0wc_Z4w-X-nr7sU51egN03s1kc9dnKw6Zri7IYB5HEvO5ooObgSwPdp8fbGOf03hsZwVP_BF1UhQX8dBk5fPe080sTLm3OZoMCZfESagaOvo1pKUtejuU4O1Mf639zgWxe5W-AboPFqFMusW_T4yEBOphBFCG6AEf4QzdUgm7o0bHVoKL1Y9bkDnVm6owcwLVmGzjxce3rm6zi8awciDvxOtw2DjB8");'
+                        ></div>
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
+                        Community Center
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296 h-[72px] px-4 py-2 w-[400px] text-[#618961] text-sm font-normal leading-normal">
+                        Public bins are overflowing and need emptying.
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Pending</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe6db]">
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
+                        <div
+                          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
+                          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_6qmCMq9CcLEvKENGw21EkCsrvDmEp8oGetfrK1kBnlOmlBaJ2cube5LzZMSvm1tXX3nEKm296pb6JyjpumCncHWsaGRNwaF-5RTqKkNxhH2mbtJ5lQxoJ8ewpw_wknMM5EJpTRdhrZ9jRvEwHTfDSQJdskSt6VpmyPfGJ2_BT0Js8F8y5bs8x_6jTBqOv4XMI2WxGX5sDWH6UlL0ozuXoQTwsr6fSPvs4AxCN0a_SoAQNOGzK1_IHlHcjqIBx6jMrbSanr9JspQ");'
+                        ></div>
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
+                        Underpass
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296 h-[72px] px-4 py-2 w-[400px] text-[#618961] text-sm font-normal leading-normal">
+                        Graffiti and accumulated trash in the underpass.
+                      </td>
+                      <td class="table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">In Progress</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:56px){.table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-56{display: none;}}
+                @container(max-width:176px){.table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-176{display: none;}}
+                @container(max-width:296px){.table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-296{display: none;}}
+                @container(max-width:416px){.table-e43811f9-99b3-4397-b566-7150c0c5f72e-column-416{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
