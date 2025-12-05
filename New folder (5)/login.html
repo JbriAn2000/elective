@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
     />
 
-    <title>CleanMate</title>
+    <title>Stitch Design</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -36,7 +36,7 @@
           </div>
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="@container">
               <div class="@[480px]:px-4 @[480px]:py-3">
                 <div
@@ -45,12 +45,12 @@
                 ></div>
               </div>
             </div>
-            <h2 class="text-[#111811] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Create an account</h2>
+            <h2 class="text-[#111811] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Welcome back</h2>
             <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
               <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111811] text-base font-medium leading-normal pb-2">Full Name</p>
+                <p style="text-align: center;" class="text-[#111811] text-base font-medium leading-normal pb-2 ">Username or Email</p>
                 <input
-                  placeholder="Enter your full name"
+                  placeholder="Enter your username or email"
                   class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111811] focus:outline-0 focus:ring-0 border border-[#dbe6db] bg-white focus:border-[#dbe6db] h-14 placeholder:text-[#618961] p-[15px] text-base font-normal leading-normal"
                   value=""
                 />
@@ -58,42 +58,23 @@
             </div>
             <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
               <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111811] text-base font-medium leading-normal pb-2">Email Address</p>
-                <input
-                  placeholder="Enter your email address"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111811] focus:outline-0 focus:ring-0 border border-[#dbe6db] bg-white focus:border-[#dbe6db] h-14 placeholder:text-[#618961] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111811] text-base font-medium leading-normal pb-2">Password</p>
+                <p style="text-align: center;"
+                class="text-[#111811] text-base font-medium leading-normal pb-2">Password</p>
                 <input
                   placeholder="Enter your password"
                   class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111811] focus:outline-0 focus:ring-0 border border-[#dbe6db] bg-white focus:border-[#dbe6db] h-14 placeholder:text-[#618961] p-[15px] text-base font-normal leading-normal"
                   value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111811] text-base font-medium leading-normal pb-2">Confirm Password</p>
-                <input
-                  placeholder="Confirm your password"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111811] focus:outline-0 focus:ring-0 border border-[#dbe6db] bg-white focus:border-[#dbe6db] h-14 placeholder:text-[#618961] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
+                 />
+                   <p class="text-[#618961] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Forgot Password?</p>
             <div class="flex px-4 py-3">
               <button
                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#13ec13] text-[#111811] text-sm font-bold leading-normal tracking-[0.015em]"
               >
-                 <a href="login.html">Create Account</a>
+                <span class="truncate"; onclick="location.href='reporttrashpage.html'">Login</span>
               </button>
+              </label>
+            </div>           
             </div>
-            <a class="text-[#618961] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline" href="login.html">Already have an account? Sign In</a>
           </div>
         </div>
       </div>
